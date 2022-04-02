@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assesment1_MuhammadDaffa</string>
+    <string name="temperature_converter">Temperatur Converter</string>
+    <string name="edit_hint">Input Hint</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celsius">Celcius</string>
+    <string name="textResult">Hasil</string>
+</resources>
