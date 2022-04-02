@@ -4,8 +4,11 @@ import android.app.AlertDialog
 import android.app.AlertDialog.Builder
 import android.content.DialogInterface
 import android.os.Bundle
+import android.widget.CompoundButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.widget.addTextChangedListener
+import kotlinx.android.synthetic.main.activity_main.*
 import org.d3if4080.assesment1_muhammaddaffa.R
 import org.d3if4080.assesment1_muhammaddaffa.databinding.ActivityMainBinding
 import java.text.DecimalFormat
@@ -19,6 +22,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        SwitchDark.setOnCheckedChangeListener { CompoundButton, isChecked ->
+        when(isChecked) {
+                true -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+
+
+                }
+                false ->{
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        }
+    }
+}
+
+
         val df = DecimalFormat("#.##")//Decimal formatter
         selectedUnit = "Fahrenheit"
 

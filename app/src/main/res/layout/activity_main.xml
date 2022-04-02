@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="org.d3if4080.assesment1_muhamaddaffa.MainActivity">
 
 
     <TextView
@@ -69,7 +69,7 @@
         android:layout_marginBottom="80dp"
         android:text="@string/celsius"
         android:textAllCaps="true"
-        android:textColor="#f00"
+        android:textColor="#FFBB86FC"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,10 +83,19 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/textResult"
         android:textAlignment="center"
-        android:textColor="#f00"
+        android:textColor="#FFBB86FC"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/textResultType"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/SwitchDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultType" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
